@@ -1,1 +1,9 @@
-h1 {color:plum}
+h1{color:plum; font-size: 80%; font-family: Arial, Helvetica, sans-serif;} 
+p{color: cadetblue;}
+/*p {color:cadetblue;} this is our basic element selector, every p on the page gets styled*/
+/*this styles a inside of a p tag its called a descendant selector*/
+p a {color:darkseagreen}
+/*this styles the id*/
+#secondparagrapgh {color:chartreuse}
+/*this styles a class*/ 
+.purpletexr {color:purple;}
