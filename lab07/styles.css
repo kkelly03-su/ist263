@@ -5,3 +5,8 @@ a:link {color: #fc4e04;}
 a:link {background-color: #fff6a9}
 a:visited {color: #9831f9;}
 a:hover {background-color: #f3028a;}
+nav {background-color: #ffa9a9;}
+nav a {color: #ffa9a9;}
+nav a:hover{background-color: #f3028a;}
+nav {padding: 10px;}
+nav{margin-bottom: 30px;}
