@@ -9,4 +9,5 @@ nav {background-color: #ffa9a9;}
 nav a {color: #ffa9a9;}
 nav a:hover{background-color: #f3028a;}
 nav {padding: 10px;}
+nav {border: 20px solid #12007a;}
 nav{margin-bottom: 30px;}
