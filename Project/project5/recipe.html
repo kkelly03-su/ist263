@@ -6,6 +6,7 @@
     <title>Recipes - My Cooking Blog</title>
     <style>
         body {
+            background-color: #ffa2b3;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -35,23 +36,24 @@
         }
         .intro {
             width: 30%;
+            margin-left: 3%;
         }
         .intro p {
             text-align: justify;
+            margin-left: 2%;
         }
         .content {
             width: 30%;
             margin-left: 2%;
         }
-        .content p {
-            text-align: justify;
-        }
         .recipes {
             width: 30%;
             padding: 20px;
+            margin-left: 2%;
         }
         .recipe {
             margin-bottom: 20px;
+            margin-left: 2%;
         }
         footer {
             background-color: #333;
@@ -63,8 +65,21 @@
             width: 100%;
         }
         .eggs, .kale {
+            justify-content: right;
             max-width: 100%;
             height: auto;
+        }
+        .flex{
+            display: flex;
+            justify-content: left;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        .img{
+            display: flex;
+            justify-content: right;
+            align-items: flex-start;
+            padding: 20px;
         }
     </style>
 </head>
@@ -85,15 +100,20 @@
 <div class="container">
     <div class="intro">
         <h2>Welcome to Our Recipes Section!</h2>
-        <p>Explore our collection of mouth-watering recipes. Whether you're a novice in the kitchen or a seasoned chef, you'll find something delicious to try.</p>
+        <p>Hey there, kitchen rookies and cooking enthusiasts alike! Welcome to the flavor-packed world of recipes where the only limit is mine and your imagination. Whether you're a newbie trying to figure out how to boil water without burning the house down or a seasoned regular looking for new ideas, you've come to the right place. 
+        Get ready to roll up your sleeves, toss on your chef's hat (or not, no judgment here I prefer an apron), and embark on a tasty adventure through my kitchen creations. From easy, simple meals to fancier fare that'll make your taste buds dance, there's something here for everyone. So, grab a spatula, fire up the stove, and let's whip up some magic together!
+        </p>
     </div>
     <div class="content">
         <h2>Recipes</h2>
         <p>Explore our delicious recipes below:</p><br>
-        <img src="../Media/eggs.jpeg" alt="eggs" class="eggs">Eggs In Purgatory<br>
-        <img src="../Media/kalesausagesoup.jpeg" alt="kalesausagesoup" class="kale">Kale and Sausage Soup</a><br>
+        <p>Eggs In Purgatory</p>
+        <p>Kale Sausage Soup</p>
     </div>
+</div>
+<div class="flex"></div>
     <div class="recipes">
+        <img src="../Media/eggs.jpeg" alt="eggs" class="eggs">Eggs In Purgatory</a><br>
         <h3>Instructions</h3>
             <ol>
                 <li>In a large pan add 2 tablespoons of olive oil, salt, pepper, and garlic, simmer until fragrant.</li>
@@ -115,9 +135,10 @@
             <li>Hot Sauce (optional)</li>
         </ul>
     </div>
-</div>
-<div class="container">
+
+<div class="flex">
     <div class="recipes">
+        <img src="../Media/kalesausagesoup.jpeg" alt="kalesausagesoup" class="kale">Kale and Sausage Soup</a><br>
         <h3>Instructions</h3>
             <ol>
                 <li>In a large pot, put 2 tablespoons of olive oil, fresh garlic, salt, and pepper. Simmer until fragrant. Then add minced carrots, celery, and white onion until they are sautéed.</li>
