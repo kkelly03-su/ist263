@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes - My Cooking Blog</title>
+    <style>
+        body {
+            background-color: #ffa2b3;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff4545;
+            padding: 20px;
+        }
+        nav {
+            background-color: #ff4545;
+            float: right;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .intro {
+            flex-grow: 2;
+        }
+        .sidebar {
+            border: 2px solid #000;
+            padding: 10px;
+            background-color: #fff;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        .image-section {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .image-section div {
+            width: 30%;
+            margin-bottom: 5px;
+        }
+        .image-section img {
+            width: 100%;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed; /* Change to fixed positioning */
+            bottom: 0;
+            width: 100%;
+        }
+        @media only screen and (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidebar, .intro {
+                width: 100%;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 10px; 
+                margin: 20px;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            .image-section div {
+                width: 100%;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Cooking Blog</h1>
+    <nav>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="recipe1.html">Recipes</a></li>
+            <li><a href="hacks.html">Hacks</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="sidebar">
+        <h2>Hacks</h2>
+    </div>
+    <div class="intro">
+        <h2>My Kitchen Life Hacks!</h2>
+        <p>Alright, listen up, folks! When it comes to kitchen life hacks, let me spill the beans on some real game-changers. First off, hate peeling garlic? Smash it with the flat side of a knife, and the skin peels off like magic. Don't toss those overripe bananas; freeze 'em for smoothies or banana bread later. And speaking of bread, keep it fresher longer by storing it with a slice of apple. Trust me, these hacks will make your kitchen hustle a whole lot smoother!</p>
+        <div class="image-section">
+            <div>
+                <img src="../Media/onion.jpeg" alt="onion">
+                <h3>There are Tears on my Apron!</h3>
+                <p>Every time you cut an onion are you stuck with tears streaming down your face? I used to be until I started freezing them just a little. I know what you're thinking why I would cut a frozen onion and you would be right. However, the best trick is to freeze the onion just a tiny bit so that the juices aren't as fragrant and don't make you tear up as easily! It has saved me and my apron many tears.
+                </p>
+            </div>
+            <div>
+                <img src="../Media/best-cutting-board.jpeg" alt="cuttingboard">
+                <h3>Smelly Cutting Board?</h3>
+                <p>Using a wooden cutting board is much better for the planet and much better for women! The microplastics in plastic cutting boards can affect a woman's hormones when she's eating the food that has been cut on it. So, very early on I realized I have enough hormones to monitor I don't need any more and switched to wood for good! 
+
+                The only downside is that they sometimes retain a little of the smell of whatever you cut on it, especially garlic! So, I recommend running a lemon wedge across the board every so often to cut out some of the leftover bacteria and seriously stubborn smells. Works like a charm!
+                </p>
+            </div>
+            <div>
+                <img src="../Media/ice cream scoop.jpeg" alt="icecreamscooper">
+                <h3>The Perfect Scoop!</h3>
+                <p>An ice cream scooper is the unexpected hero in the kitchen when it comes to measuring cookie dough. Its rounded shape and spring-loaded mechanism make it an ideal tool for portioning out consistent amounts of dough, ensuring uniformity in cookie size and baking. With a simple squeeze, it effortlessly forms perfectly shaped dough balls, eliminating the guesswork and messy hands that often accompany traditional scooping methods. The scooper's sturdy construction also allows for easy release, preventing any sticking and ensuring smooth, clean transfers onto baking sheets. Whether you're baking a batch of classic chocolate chip or experimenting with new flavors, the ice cream scooper proves to be an invaluable companion, streamlining the cookie-making process with precision and ease.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+

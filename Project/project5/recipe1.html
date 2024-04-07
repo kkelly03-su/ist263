@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,11 +65,6 @@
             bottom: 0;
             width: 100%;
         }
-        .eggs, .kale {
-            justify-content: right;
-            max-width: 100%;
-            height: auto;
-        }
         .flex{
             display: flex;
             justify-content: left;
@@ -81,6 +77,20 @@
             align-items: flex-start;
             padding: 20px;
         }
+        .kale, .eggs {
+            width: 200px;
+            height: auto;
+            padding: 2px;
+        }
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 10px; 
+                margin: 8px;
+            }
+            .recipes, .img {
+                width: 100%; 
+            }
+        }
     </style>
 </head>
 <body>
@@ -89,10 +99,9 @@
     <h1>My Cooking Blog</h1>
     <nav>
         <ul>
-            <li><a href="#homepage.html">Home</a></li>
-            <li><a href="#">Recipes</a></li>
-            <li><a href="#">Hacks</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="recipe1.html">Recipes</a></li>
+            <li><a href="hacks.html">Hacks</a></li>
         </ul>
     </nav>
 </header>
@@ -113,7 +122,8 @@
 </div>
 <div class="flex"></div>
     <div class="recipes">
-        <img src="../Media/eggs.jpeg" alt="eggs" class="eggs">Eggs In Purgatory</a><br>
+        <img src="../Media/eggs.jpeg" alt="eggs" class="eggs"></a><br>
+        <h2>Eggs In Purgatory</h2>
         <h3>Instructions</h3>
             <ol>
                 <li>In a large pan add 2 tablespoons of olive oil, salt, pepper, and garlic, simmer until fragrant.</li>
@@ -138,7 +148,8 @@
 
 <div class="flex">
     <div class="recipes">
-        <img src="../Media/kalesausagesoup.jpeg" alt="kalesausagesoup" class="kale">Kale and Sausage Soup</a><br>
+        <img src="../Media/kalesausagesoup.jpeg" alt="kalesausagesoup" class="kale"></a><br>
+        <h2>Kale and Sausage Soup</h2>
         <h3>Instructions</h3>
             <ol>
                 <li>In a large pot, put 2 tablespoons of olive oil, fresh garlic, salt, and pepper. Simmer until fragrant. Then add minced carrots, celery, and white onion until they are sautéed.</li>
