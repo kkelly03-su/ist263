@@ -15,6 +15,9 @@
             background-color: #ff4545;
             padding: 20px;
         }
+        .skip:focus { /* when the button is tabbed to */
+            left: 10px; 
+        }
         nav {
             background-color: #ff4545;
             float: right;
@@ -79,6 +82,7 @@
 <header>
     <h1>My Cooking Blog</h1>
     <nav>
+        <a href="#skip" class="skip">Skip to Content</a><br>
         <ul>
             <li><a href="homepage.html">Home</a></li>
             <li><a href="recipe1.html">Recipes</a></li>
@@ -90,7 +94,7 @@
 <div class="container">
     <div class="intro">
         <h2>Hi! Welcome to Kat's Kitchen!</h2>
-        <p>As it says on the apron this is Kats Kitchen!! However I am here to welcome you to make the kitchen your own! This is a place for new, or inexperienced chefs to have a place to look for new meals to make to enjoy or share with those around you to enjoy. Cooking can be fun and low stress if you do it with a little support!. 
+        <p id="skip">As it says on the apron this is Kats Kitchen!! However I am here to welcome you to make the kitchen your own! This is a place for new, or inexperienced chefs to have a place to look for new meals to make to enjoy or share with those around you to enjoy. Cooking can be fun and low stress if you do it with a little support!. 
         </p>
     </div>
     <div class="expect">

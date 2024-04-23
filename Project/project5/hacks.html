@@ -15,6 +15,9 @@
             background-color: #ff4545;
             padding: 20px;
         }
+        .skip:focus { /* when the button is tabbed to */
+            left: 10px; 
+        }
         nav {
             background-color: #ff4545;
             float: right;
@@ -94,6 +97,7 @@
 <header>
     <h1>My Cooking Blog</h1>
     <nav>
+        <a href="#skip" class="skip">Skip to Content</a><br>
         <ul>
             <li><a href="homepage.html">Home</a></li>
             <li><a href="recipe1.html">Recipes</a></li>
@@ -106,7 +110,7 @@
     <div class="sidebar">
         <h2>Hacks</h2>
     </div>
-    <div class="intro">
+    <div class="intro" id="skip">
         <h2>My Kitchen Life Hacks!</h2>
         <p>Alright, listen up, folks! When it comes to kitchen life hacks, let me spill the beans on some real game-changers. First off, hate peeling garlic? Smash it with the flat side of a knife, and the skin peels off like magic. Don't toss those overripe bananas; freeze 'em for smoothies or banana bread later. And speaking of bread, keep it fresher longer by storing it with a slice of apple. Trust me, these hacks will make your kitchen hustle a whole lot smoother!</p>
         <div class="image-section">
