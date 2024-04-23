@@ -11,12 +11,12 @@
             margin: 0;
             padding: 0;
         }
+        .skip:focus { /* when the button is tabbed to */
+            left: 10px; 
+        }
         header {
             background-color: #ff4545;
             padding: 20px;
-        }
-        .skip:focus { /* when the button is tabbed to */
-            left: 10px; 
         }
         nav {
             background-color: #ff4545;
@@ -80,9 +80,9 @@
 <body>
 
 <header>
-    <h1>My Cooking Blog</h1>
+    <h1>My Cooking Blog</h1><br>
+    <a href="#skip" class="skip">Skip to Content</a><br>
     <nav>
-        <a href="#skip" class="skip">Skip to Content</a><br>
         <ul>
             <li><a href="homepage.html">Home</a></li>
             <li><a href="recipe1.html">Recipes</a></li>
