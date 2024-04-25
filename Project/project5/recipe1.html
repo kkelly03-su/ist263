@@ -51,13 +51,16 @@
             margin-left: 2%;
         }
         .recipes {
+            display: flex;
             width: 30%;
             padding: 20px;
             margin-left: 2%;
         }
         .recipe {
             margin-bottom: 20px;
-            margin-left: 2%;
+            margin-left: 5%;
+            padding: 2px; 
+            justify-content: space-around;
         }
         footer {
             background-color: #333;
@@ -80,20 +83,51 @@
             align-items: flex-start;
             padding: 20px;
         }
-        .kale, .eggs {
-            width: 200px;
-            height: auto;
+        .eggs {
+            width: 500px;
+            height: fit-content;
             padding: 2px;
+        }
+        .kale {
+            width: 800px;
+            height:fit-content;
+            padding: 2px;
+        }
+        .box2 {
+            margin: 5%;
+            padding: 5px;
+        }
+        .split {
+            display: flex;
+            max-width: 100%;
+        }
+        .kale2 {
+            padding: 2%;
+            margin: 2px;
+        }
+        .kale3 {
+            display: flex;
+            max-width: 100%;
         }
         @media screen and (max-width: 600px) {
             .container {
                 padding: 10px; 
                 margin: 8px;
+                flex-direction: column;
+            }
+            #eggs1, #kale1{
+                max-width: 100%;
             }
             .recipes, .img {
-                width: 100%; 
+                width: 100%;
+                flex-direction: column; 
             }
         }
+        @media only screen and (max-width: 500px) {
+                nav a{display:block; padding: 10px;
+            margin: 1px;}
+                span{display: none;}
+            }
     </style>
 </head>
 <body>
@@ -103,9 +137,9 @@
     <a href="#skip" class="skip">Skip to Content</a><br>
     <nav>
         <ul>
-            <li><a href="homepage.html">Home</a></li>
-            <li><a href="recipe1.html">Recipes</a></li>
-            <li><a href="hacks.html">Hacks</a></li>
+            <li><a href="homepage.html">Home</a></li><span> |</span>
+            <li><a href="recipe1.html">Recipes</a></li><span> |</span>
+            <li><a href="hacks.html">Hacks</a></li><span> |</span>
         </ul>
     </nav>
 </header>
@@ -126,8 +160,8 @@
 </div>
 <div class="flex"></div>
     <div class="recipes">
-        <img src="../Media/eggs.jpeg" alt="eggs" class="eggs"><br>
-        <h2>Eggs In Purgatory</h2>
+        <div class="box"><img src="../Media/eggs.jpeg" alt="eggs" class="eggs" id="eggs1"><br></div>
+        <div class="box2"><h2>Eggs In Purgatory</h2>
         <h3>Instructions</h3>
             <ol>
                 <li>In a large pan add 2 tablespoons of olive oil, salt, pepper, and garlic, simmer until fragrant.</li>
@@ -136,6 +170,8 @@
                 <li>Put in as many eggs as desired then place a lid on top until eggs are poached.</li>
                 <li>Serve on Garlic Bread and enjoy!</li>
             </ol>
+        </div>
+        <div class="split">
         <h4>Ingredients</h4>
         <ul>
             <li>Eggs</li>
@@ -148,12 +184,13 @@
             <li>Crushed Red Pepper Flakes</li>
             <li>Hot Sauce (optional)</li>
         </ul>
+        </div>
     </div>
 
 <div class="flex">
     <div class="recipes">
-        <img src="../Media/kalesausagesoup.jpeg" alt="kalesausagesoup" class="kale"><br>
-        <h2>Kale and Sausage Soup</h2>
+        <img src="../Media/kalesausagesoup.jpeg" alt="kalesausagesoup" class="kale" id="kale1"><br>
+        <div class="kale2"><h2>Kale and Sausage Soup</h2>
         <h3>Instructions</h3>
             <ol>
                 <li>In a large pot, put 2 tablespoons of olive oil, fresh garlic, salt, and pepper. Simmer until fragrant. Then add minced carrots, celery, and white onion until they are sautéed.</li>
@@ -164,8 +201,8 @@
                 <li>Squeeze in half a lemon.</li>
                 <li>Optional: add orzo or rice.</li>
                 <li>Stir and enjoy!</li>
-            </ol>
-        <h4>Ingredients</h4>
+            </ol></div>
+        <div class="kale3"><h4>Ingredients</h4>
             <ul>
                 <li>Kale</li>
                 <li>Sausage</li>
@@ -183,6 +220,7 @@
                 <li>Bay Leaves</li>
                 <li>Basmati Rice or Orzo (optional)</li>
             </ul>
+        </div>
     </div>
 </div>
 

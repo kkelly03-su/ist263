@@ -70,11 +70,18 @@
             .container {
                 padding: 10px; 
                 margin: 20px;
+                flex-direction: column;
             }
             .intro, .expect, .photo {
                 width: 100%; 
+                flex-direction: column;
             }
         }
+        @media only screen and (max-width: 500px) {
+                nav a{display:block; padding: 10px;
+            margin: 1px;}
+                span{display: none;}
+            }
     </style>
 </head>
 <body>
@@ -84,9 +91,9 @@
     <a href="#skip" class="skip">Skip to Content</a><br>
     <nav>
         <ul>
-            <li><a href="homepage.html">Home</a></li>
-            <li><a href="recipe1.html">Recipes</a></li>
-            <li><a href="hacks.html">Hacks</a></li>
+            <li><a href="homepage.html">Home</a></li><span> |</span>
+            <li><a href="recipe1.html">Recipes</a></li><span> |</span>
+            <li><a href="hacks.html">Hacks</a></li><span> |</span>
         </ul>
     </nav>
 </header>
