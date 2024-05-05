@@ -50,6 +50,7 @@
             width: 30%;
             margin-left: 2%;
         }
+        /*
         .recipes {
             display: flex;
             width: 30%;
@@ -62,6 +63,7 @@
             padding: 2px; 
             justify-content: space-around;
         }
+        */
         footer {
             background-color: #333;
             color: #fff;
@@ -71,29 +73,21 @@
             bottom: 0;
             width: 100%;
         }
+        /*
         .flex{
             display: flex;
             justify-content: left;
             align-items: flex-start;
             padding: 20px;
         }
+        
         .img{
             display: flex;
             justify-content: right;
             align-items: flex-start;
             padding: 20px;
         }
-        .eggs {
-            width: 500px;
-            height: fit-content;
-            padding: 2px;
-        }
-        .kale {
-            width: 700px;
-            height:fit-content;
-            padding: 2px;
-            margin: 3%;
-        }
+        
         .box2 {
             margin: 5%;
             padding: 5px;
@@ -102,15 +96,9 @@
             display: flex;
             max-width: 100%;
         }
-        .kale2 {
-            display: block;
-            padding: 2%;
-            margin: 2px;
-        }
-        .kale3 {
-            display: flex;
-            max-width: 100%;
-        }
+        */
+
+        /*
         @media screen and (max-width: 600px) {
             .container {
                 padding: 10px; 
@@ -125,11 +113,53 @@
                 flex-direction: column; 
             }
         }
+        */
         @media only screen and (max-width: 500px) {
                 nav a{display:block; padding: 10px;
             margin: 1px;}
                 span{display: none;}
             }
+
+    .recipe1 {
+        display: flex;
+        margin: 50px;
+        padding: 10px;
+        justify-content: space-between;
+    }
+
+    .recipe2 {
+        display: flex;
+        margin: 50px;
+        padding: 10px;
+        justify-content: space-between;
+    }
+
+    .recipe2 div {
+        margin: 50px
+    }
+
+    @media only screen and (max-width: 500px) {
+        .recipe1 {
+            flex-direction: column;
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .recipe2 {
+            flex-direction: column;
+        }
+    }
+
+    .recipes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+            margin: 20px;
+        }
+
+        .recipe {
+            padding: 20px
+        }
     </style>
 </head>
 <body>
@@ -160,10 +190,11 @@
         <p><strong>Kale Sausage Soup</strong></p>
     </div>
 </div>
-<div class="flex"></div>
-    <div class="recipes">
-        <div class="box"><img src="../Media/eggs.jpeg" alt="eggs" class="eggs" id="eggs1"><br></div>
-        <div class="box2"><h2>Eggs In Purgatory</h2>
+
+
+<div class="recipes">
+    <div class="recipe"><img src="../Media/eggs.jpeg" alt="eggs"  width="300">
+    <h2>Eggs In Purgatory</h2>
         <h3>Instructions</h3>
             <ol>
                 <li>In a large pan add 2 tablespoons of olive oil, salt, pepper, and garlic, simmer until fragrant.</li>
@@ -172,39 +203,33 @@
                 <li>Put in as many eggs as desired then place a lid on top until eggs are poached.</li>
                 <li>Serve on Garlic Bread and enjoy!</li>
             </ol>
-        </div>
-        <div class="split">
-        <h4>Ingredients</h4>
-        <ul>
-            <li>Eggs</li>
-            <li>Fresh Bread</li>
-            <li>Stewed Tomatoes</li>
-            <li>Olive Oil</li>
-            <li>Garlic</li>
-            <li>Salt</li>
-            <li>Black Pepper</li>
-            <li>Crushed Red Pepper Flakes</li>
-            <li>Hot Sauce (optional)</li>
-        </ul>
-        </div>
+            <h4>Ingredients</h4>
+            <ul>
+                <li>Eggs</li>
+                <li>Fresh Bread</li>
+                <li>Stewed Tomatoes</li>
+                <li>Olive Oil</li>
+                <li>Garlic</li>
+                <li>Salt</li>
+                <li>Black Pepper</li>
+                <li>Crushed Red Pepper Flakes</li>
+                <li>Hot Sauce (optional)</li>
+            </ul>
     </div>
-
-<div class="flex">
-    <div class="recipes">
-        <img src="../Media/kalesausagesoup.jpeg" alt="kalesausagesoup" class="kale" id="kale1"><br>
-        <div class="kale2"><h2>Kale and Sausage Soup</h2>
+    <div class="recipe"><img src="../Media/kalesausagesoup.jpeg" alt="kalesausagesoup" width="300">
+    <h2>Kale and Sausage Soup</h2>
         <h3>Instructions</h3>
-            <ol>
-                <li>In a large pot, put 2 tablespoons of olive oil, fresh garlic, salt, and pepper. Simmer until fragrant. Then add minced carrots, celery, and white onion until they are sautéed.</li>
-                <li>In a separate frying pan, cook sausage until brown.</li>
-                <li>Add water to the pot with chicken bouillon powder and stir.</li>
-                <li>Add cooked sausage and kale.</li>
-                <li>Add 2 bay leaves and other spices to taste.</li>
-                <li>Squeeze in half a lemon.</li>
-                <li>Optional: add orzo or rice.</li>
-                <li>Stir and enjoy!</li>
-            </ol></div>
-        <div class="kale3"><h4>Ingredients</h4>
+        <ol>
+            <li>In a large pot, put 2 tablespoons of olive oil, fresh garlic, salt, and pepper. Simmer until fragrant. Then add minced carrots, celery, and white onion until they are sautéed.</li>
+            <li>In a separate frying pan, cook sausage until brown.</li>
+            <li>Add water to the pot with chicken bouillon powder and stir.</li>
+            <li>Add cooked sausage and kale.</li>
+            <li>Add 2 bay leaves and other spices to taste.</li>
+            <li>Squeeze in half a lemon.</li>
+            <li>Optional: add orzo or rice.</li>
+            <li>Stir and enjoy!</li>
+        </ol>
+        <h4>Ingredients</h4>
             <ul>
                 <li>Kale</li>
                 <li>Sausage</li>
@@ -221,11 +246,8 @@
                 <li>Basil</li>
                 <li>Bay Leaves</li>
                 <li>Basmati Rice or Orzo (optional)</li>
-            </ul>
-        </div>
-    </div>
+            </ul></div>
 </div>
-
 
 <footer>
     <p>Contact: kkelly03@syr.edu | Phone: 123-456-7890</p>
@@ -233,3 +255,4 @@
 
 </body>
 </html>
+
